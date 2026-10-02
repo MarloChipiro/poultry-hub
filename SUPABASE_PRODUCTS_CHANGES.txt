@@ -1,0 +1,17 @@
+Henhouse V3 - Shared Supabase Products
+
+Implemented:
+- Seller Product Catalog reads the signed-in farmer's products from public.products.
+- Add listing inserts a product into Supabase with seller_id = authenticated user ID.
+- Edit listing updates only the authenticated farmer's own product.
+- Publish/Unpublish updates products.available.
+- Seller phone/WhatsApp/location text now updates public.profiles.
+- Buyer Marketplace loads all available products from Supabase.
+- Buyer Marketplace loads seller names/contact/location from public.profiles.
+- Existing cart, messages, reviews and delivery-fee demo storage remain local for now.
+- Product photos currently use the existing image_url field. Supabase Storage migration is a later stage.
+- Existing Farm Management module was not changed.
+
+Required database setup:
+- products table
+- RLS policies for select/insert/update/delete

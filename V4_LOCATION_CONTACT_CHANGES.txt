@@ -1,0 +1,14 @@
+Henhouse V4 - Seller Contact & GPS
+
+Implemented:
+- Separate phone and WhatsApp fields in seller profile.
+- Use My Current Location captures browser GPS coordinates.
+- Farmer latitude/longitude sync to public.profiles.
+- Buyer marketplace reads each seller phone, WhatsApp and GPS coordinates.
+- Buyer product cards show Call, WhatsApp and Map actions when data is available.
+- Zimbabwe local WhatsApp numbers beginning with 0 are converted to +263 format for wa.me links.
+- Nearby sellers are sorted by approximate distance from the buyer's detected location.
+- Nearby list provides Call, WhatsApp and Map links.
+- Existing product/Supabase flow and Farm Management module preserved.
+
+Test on Netlify/HTTPS. Browser geolocation normally requires HTTPS and user permission.

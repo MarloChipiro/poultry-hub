@@ -1,0 +1,25 @@
+Henhouse V2 - Supabase Authentication
+
+Implemented:
+- Create Account now uses Supabase Auth signUp().
+- Sign In now uses Supabase Auth signInWithPassword().
+- Sign Out now uses Supabase Auth signOut().
+- Supabase sessions persist across refresh/reopen.
+- A profiles row is created on first authenticated session if missing.
+- Full name is stored as Supabase user metadata and in public.profiles.
+- Existing Farmer, Seller, Buyer and Farm Management pages were not redesigned.
+- Existing Farm Management Supabase code was left unchanged.
+- Service worker cache version/paths were updated.
+
+Required Supabase setup already reported complete by user:
+- Email Auth enabled.
+- public.profiles table created.
+- RLS policies created.
+
+Test:
+1. Deploy this folder/ZIP to Netlify.
+2. Create a new account.
+3. If email confirmation is enabled, confirm email and then sign in.
+4. Check Authentication > Users.
+5. Check Table Editor > profiles.
+6. Sign out and sign back in.
